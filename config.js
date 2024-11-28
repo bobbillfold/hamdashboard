@@ -1,7 +1,7 @@
-const topBarCenterText = `VA3HDL - FN04ga`;
+const topBarCenterText = `CRATER LAKE`;
 
 // Grid layout
-var layout_cols = 4;
+var layout_cols = 3;
 var layout_rows = 3;
 
 // Menu items
@@ -59,55 +59,54 @@ const aURL = [
 // the comma at the end is important!
 // You can't add more items because there are only 12 placeholders on the dashboard
 // but you can replace the titles and the images with anything you want.
+
+//  [
+//    "LIGHTNING",
+//    "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa",
+//  ],
+//  [
+//    "LIGHTNING LOCAL",
+//    "https://www.blitzortung.org/en/Images/image_b_ny.png",
+//  ],
+//  ["APRS", "https://aprs.fi/#!lat=42.5463&lng=-121.745"],
 const aIMG = [
-  ["RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
   [
-    "LOCAL RADAR",
-    "https://radar.weather.gov/ridge/standard/KNQA_loop.gif",
+    "REGIONAL RADAR",
+    "https://radar.weather.gov/ridge/standard/KMAX_loop.gif",
+  ],
+  ["NATIONAL RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
+  [
+    "REGIONAL RADAR",
+    "https://radar.weather.gov/ridge/standard/KMAX_loop.gif",
   ],
   [
-    "NOAA D-RAP",
-    "https://services.swpc.noaa.gov/images/animations/d-rap/global/d-rap/latest.png",
+    "SATELLITE PNW",
+    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/pnw/EXTENT3/GOES16-PNW-EXTENT3-600x600.gif",
   ],
-  [
-    "ISS POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=iss&width=600&height=300&mode=M&satid=25544",
-  ],
+
   [
     "SATELLITE CAN",
     "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/can/EXTENT3/GOES16-CAN-EXTENT3-1125x560.gif",
   ],
+  
+  ["NWS Hourly",
+    "https://forecast.weather.gov/meteograms/Plotter.php?lat=42.8895&lon=-122.1414&wfo=MFR&zcode=ORZ027&gset=18&gdiff=3&unit=0&tinfo=PY8&ahour=0&pcmd=10001000001100000000000000000000000000000000000000000000000&lg=en&indu=1!1!1!&dd=&bw=&hrspan=48&pqpfhr=6&psnwhr=6"],
+  
+ 
+  
+  ["FEES CAM", "https://www.nps.gov/webcams-crla/camera0.jpg?1732755786020"],
+
   [
-    "SATELLITE CGL",
-    "https://cdn.star.nesdis.noaa.gov/GOES16/GLM/SECTOR/cgl/EXTENT3/GOES16-CGL-EXTENT3-600x600.gif",
+    "VC CAM",
+    "https://www.nps.gov/webcams-crla/cameraHQ0.jpg?1732482728079",
   ],
   [
-    "LIGHTNING",
-    "https://images.lightningmaps.org/blitzortung/america/index.php?animation=usa",
+    "CRATER CAM",
+    "https://www.nps.gov/webcams-crla/camerasinnott.jpg?1732478804250",
   ],
-  [
-    "LIGHTNING LOCAL",
-    "https://www.blitzortung.org/en/Images/image_b_ny.png",
-  ],
-  ["YOUTUBE EXAMPLE", "iframe|https://www.youtube.com/embed/fzPFaXAV_2Y?autoplay=1&mute=1"],
-  [
-    "WEBSITE EXAMPLE",
-    "iframe|https://globe.adsbexchange.com/?airport=YYZ",
-  ],
-  ["VIDEO EXAMPLE", "https://himawari8.nict.go.jp/movie/720/20240611_pifd.mp4"],
-  ["HF PROPAGATION",
-    "https://www.hamqsl.com/solar101vhf.php"],
-  [
-    "RS-44 POSITION",
-    "https://www.heavens-above.com/orbitdisplay.aspx?icon=default&width=600&height=300&mode=M&satid=44909",
-  ],
-  ["Solar WX",
-    "https://services.swpc.noaa.gov/images/animations/suvi/primary/map/latest.png"],
-  ["HF PROPAGATION",
-    "https://www.hamqsl.com/solar100sc.php"],
-  ["HF PROPAGATION",
-    "https://www.hamqsl.com/solarpich.php"],
+  
+
 ];
 
 // Image rotation intervals in milliseconds per tile - If the line below is commented, all tiles will be rotated every 30000 milliseconds (30s)
-const tileDelay = [11200,10000,11000,10100,10200,10500,10300,10600,30400,60700,60900,10800,30400,60700,60900,10800];
+const tileDelay = [180000,180000,180000,180000,180000,180000,180000,180000,180000,];
