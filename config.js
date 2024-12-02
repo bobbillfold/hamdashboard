@@ -76,8 +76,8 @@ const aIMG = [
   ],
   ["NATIONAL RADAR", "https://radar.weather.gov/ridge/standard/CONUS_loop.gif"],
   [
-    "REGIONAL RADAR",
-    "https://radar.weather.gov/ridge/standard/KMAX_loop.gif",
+    "UNION CREEK CAM",
+    "https://tripcheck.com/RoadCams/cams/ORE62%20at%20Union%20Creek_pid2920.JPG?rand=1733098644057",
   ],
   [
     "SATELLITE PNW",
